@@ -43,7 +43,7 @@ export default function AppointmentForm() {
               <label className="block font-sans font-medium text-[#1A1A1A]">
                 1. Qual procedimento você deseja realizar?
               </label>
-              <Select onValueChange={setProcedure}>
+              <Select onValueChange={(val) => setProcedure(String(val || ""))}>
                 <SelectTrigger className="w-full border-[#D4A373]/30 focus:ring-[#D4A373] h-12 rounded-xl bg-[#FAF8F5]">
                   <SelectValue placeholder="Selecione o procedimento..." />
                 </SelectTrigger>
@@ -63,7 +63,7 @@ export default function AppointmentForm() {
               <label className="block font-sans font-medium text-[#1A1A1A]">
                 2. Qual o melhor período para seu atendimento?
               </label>
-              <Select onValueChange={setTime}>
+              <Select onValueChange={(val) => setTime(String(val || ""))}>
                 <SelectTrigger className="w-full border-[#D4A373]/30 focus:ring-[#D4A373] h-12 rounded-xl bg-[#FAF8F5]">
                   <SelectValue placeholder="Selecione o período ideal..." />
                 </SelectTrigger>
