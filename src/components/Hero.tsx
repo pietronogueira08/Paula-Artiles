@@ -58,10 +58,10 @@ export default function Hero() {
               {/* Note: In a real scenario, this would be an actual interior image */}
               <div className="w-full h-full bg-gradient-to-br from-[#f0eae1] to-[#e6dfd3] flex items-center justify-center relative">
                 <Image
-                  src="/logo-transparent.png"
+                  src="/hero-interior.jpg"
                   alt="Clínica Dra. Paula Artiles Interior"
                   fill
-                  className="object-cover opacity-80 mix-blend-multiply"
+                  className="object-cover"
                   priority
                 />
               </div>
